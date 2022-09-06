@@ -1,0 +1,27 @@
+{
+    "staging": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-beautytruth-staging-112244-authRole",
+            "UnauthRoleArn": "arn:aws:iam::522139156612:role/amplify-beautytruth-staging-112244-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::522139156612:role/amplify-beautytruth-staging-112244-authRole",
+            "Region": "eu-west-2",
+            "DeploymentBucketName": "amplify-beautytruth-staging-112244-deployment",
+            "UnauthRoleName": "amplify-beautytruth-staging-112244-unauthRole",
+            "StackName": "amplify-beautytruth-staging-112244",
+            "StackId": "arn:aws:cloudformation:eu-west-2:522139156612:stack/amplify-beautytruth-staging-112244/2f24fe80-405a-11eb-97ff-0283d9cf08b8",
+            "AmplifyAppId": "detv47xm1oobr"
+        },
+        "categories": {
+            "function": {
+                "beautytrutha4cdcd1aCustomMessage": {
+                    "REDIRECTURL": "",
+                    "EMAILSUBJECT": "Hi, welcome to BeautyTruth, here's your verification code:",
+                    "EMAILMESSAGE": "Here's the code"
+                }
+            },
+            "auth": {
+                "beautytrutha4cdcd1a": {}
+            }
+        }
+    }
+}

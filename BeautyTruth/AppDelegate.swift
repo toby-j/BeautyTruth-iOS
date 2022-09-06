@@ -2,20 +2,28 @@
 //  AppDelegate.swift
 //  BeautyTruth
 //
-//  Created by TobyDev on 02/06/2020.
+//  Created by TobyDev on 31/05/2020.
+//  Copyright © 2020 TobyDev. All rights reserved.
 //
 
 import UIKit
+import SwiftUI
+import Amplify
+import AmplifyPlugins
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
-
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        do {
+            try Amplify.add(plugin: AWSCognitoAuthPlugin())
+            try Amplify.configure()
+            print("Amplify configured with auth plugin")
+        } catch {
+            print("Failed to initialize Amplify with \(error)")
+        }
         return true
     }
+
 
     // MARK: UISceneSession Lifecycle
 
@@ -30,7 +38,5 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
         // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
     }
-
-
 }
 

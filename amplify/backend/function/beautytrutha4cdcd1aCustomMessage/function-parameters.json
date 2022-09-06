@@ -1,0 +1,24 @@
+{
+  "trigger": true,
+  "modules": [
+    "verification-link"
+  ],
+  "parentResource": "beautytrutha4cdcd1a",
+  "functionName": "beautytrutha4cdcd1aCustomMessage",
+  "resourceName": "beautytrutha4cdcd1aCustomMessage",
+  "parentStack": "auth",
+  "triggerEnvs": [
+    {
+      "key": "RESOURCENAME",
+      "value": "resourceName"
+    }
+  ],
+  "triggerDir": "/usr/local/lib/node_modules/@aws-amplify/cli/node_modules/amplify-category-auth/provider-utils/awscloudformation/utils/../triggers/CustomMessage",
+  "triggerTemplate": "CustomMessage.json.ejs",
+  "roleName": "beautytrutha4cdcd1aCustomMessage",
+  "skipEdit": true,
+  "REDIRECTURL": "",
+  "EMAILSUBJECT": "Hi, welcome to BeautyTruth, here's your verification code:",
+  "EMAILMESSAGE": "Here's the code",
+  "RESOURCENAME": "resourceName"
+}
